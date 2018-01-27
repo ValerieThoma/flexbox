@@ -1,0 +1,53 @@
+<html>
+<!-- ALL ITEMS BY DEFAULT HAVE AN ORDER OF 0 -->
+<!-- WE CAN USE NEGATIVE NUMBERS -->
+<!-- DON'T FORGET, WHEN YOU USE REVERSE, THE AXIS OR ORIGIN CHANGES SO UPDATE THE ORDER ACCORDINGLY -->
+	<head>
+		<title>Flex Box</title>
+		<style>
+		@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+			.box{
+				font-size: 100px;
+				color: white;
+				padding: 10px;
+				text-align: center;
+				font-family: lato;
+				font-weight: 300;
+				box-sizing: border-box;
+			}
+			.box-1 {background: #e51400; order: 7;}
+			.box-2 {background: #fa6800;}
+			.box-3 {background: #f0a30a; }
+			.box-4 {background: #e3c800; }
+			.box-5 {background: #a4c400; }
+			.box-6 {background: #60a917;}
+			.box-7 {background: #00aba9; order: 8;}
+			.box-8 {background: #1ba1e2;} 
+			.box-9 {background: #aa00ff; order: -9;}
+			.container{
+				display: flex;
+				border: 10px solid black;
+				height: 100vh;
+				flex-direction: row; /*default*/
+				align-items: center;
+				justify-content: center;
+
+				
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box box-1">1</div>
+			<div class="box box-2">2</div>
+			<div class="box box-3">3</div>
+			<div class="box box-4">4</div>
+			<div class="box box-5">5</div>
+			<div class="box box-6">6</div>
+			<div class="box box-7">7</div>
+			<div class="box box-8">8</div>
+			<div class="box box-9">9</div>
+		</div>
+	</body>
+</html>
